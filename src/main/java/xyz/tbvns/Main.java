@@ -1,8 +1,13 @@
 package xyz.tbvns;
 
+import xyz.prismenetwork.kelpmodloader.ModsAPI.Mods;
+
+
 public class Main {
-    public static void load() {
+    public static Mods load(Mods mods) {
         System.out.println("Hello world from KelpModLoaders API !");
-        new TestClass().PrintTest();
+        mods.addBlock("Test", "stone");
+
+        return mods;
     }
 }
