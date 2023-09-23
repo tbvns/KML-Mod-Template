@@ -13,4 +13,20 @@
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+
+    <repositories>
+        <repository>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
+        </repository>
+    </repositories>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.github.tbvns</groupId>
+            <artifactId>KelpModLoader</artifactId>
+            <version>alpha</version>
+        </dependency>
+    </dependencies>
+
 </project>
