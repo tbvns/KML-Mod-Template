@@ -13,6 +13,7 @@ public class Main {
         System.out.println("Hello world from KelpModLoaders API !");
         mods.addBlock("Test", "yay2");
         mods.addTexture("yay2", TextureType.Block(), "textures/ya y2.png");
+        mods.getServer().getPluginManager().registerEvents(new ClickEvent(), mods.getKMLplugin());
 
         return mods;
     }

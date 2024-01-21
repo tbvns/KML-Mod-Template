@@ -25,7 +25,13 @@
         <dependency>
             <groupId>com.github.tbvns</groupId>
             <artifactId>KelpModLoader</artifactId>
-            <version>f9f9a03</version>
+            <version>ddfb22a</version>
+        </dependency>
+        <dependency>
+            <groupId>org.spigotmc</groupId>
+            <artifactId>spigot-api</artifactId>
+            <version>1.20-R0.1-SNAPSHOT</version>
+            <scope>provided</scope>
         </dependency>
     </dependencies>
     <build>
