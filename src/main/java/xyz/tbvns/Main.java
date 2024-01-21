@@ -12,8 +12,7 @@ public class Main {
     public Mods load(Mods mods) throws URISyntaxException {
         System.out.println("Hello world from KelpModLoaders API !");
         mods.addBlock("Test", "yay2");
-        mods.addTexture("yay2", TextureType.Block(), "textures/ya y2.png");
-        mods.getServer().getPluginManager().registerEvents(new ClickEvent(), mods.getKMLplugin());
+        mods.addTexture("yay2", TextureType.Block(), "textures/yay2.png");
 
         return mods;
     }
