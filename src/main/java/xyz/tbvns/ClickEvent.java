@@ -4,8 +4,8 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerInteractEvent;
 import xyz.prismenetwork.kelpmodloader.Block.ModdedBlock;
-import xyz.prismenetwork.kelpmodloader.Item.ItemUtils;
 import xyz.prismenetwork.kelpmodloader.Item.ModdedItem;
+import xyz.prismenetwork.kelpmodloader.ModsAPI.ItemUtils;
 
 import java.util.EventListener;
 
@@ -19,7 +19,6 @@ public class ClickEvent implements Listener {
                 ModdedBlock block = ItemUtils.getModedBlockFromItem(event.getItem());
                 if (item != null) {
                     event.getPlayer().sendMessage("You used the modded item " + item.Name);
-                    event.getPlayer().chat("Hello");
                 } else if (block != null) {
                     event.getPlayer().sendMessage("You used the modded block " + block.name);
                 }
