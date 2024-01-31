@@ -13,7 +13,6 @@ public class ClickEvent implements Listener {
     @EventHandler
     public void clickEvent(PlayerInteractEvent event) {
         if (event.hasItem()) {
-            System.out.println(ItemUtils.isModed(event.getItem()));
             if (ItemUtils.isModed(event.getItem())) {
                 ModdedItem item = ItemUtils.getModedItem(event.getItem());
                 ModdedBlock block = ItemUtils.getModedBlockFromItem(event.getItem());

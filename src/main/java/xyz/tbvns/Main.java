@@ -9,9 +9,9 @@ import java.net.URISyntaxException;
 
 
 public class Main {
-    public Mods load(Mods mods) throws URISyntaxException {
+    public Mods load(Mods mods) {
         System.out.println("Hello world from KelpModLoaders API !");
-        mods.addBlock("Test", "yay2");
+        mods.addBlock("Test", "yay2", 200);
         mods.addItem("Hello", "", "pickaxe", Material.WOODEN_PICKAXE, ItemType.Handheld);
         mods.addTexture("yay2", TextureType.Block(), "textures/yay2.png");
         mods.addTexture("pickaxe", TextureType.Item(), "textures/pickaxe.png");
